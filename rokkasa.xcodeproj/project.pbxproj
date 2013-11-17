@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA6AE44718393B08005DF616 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6AE44618393B08005DF616 /* Foundation.framework */; };
+		FA6AE44918393B08005DF616 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6AE44818393B08005DF616 /* CoreGraphics.framework */; };
+		FA6AE44B18393B08005DF616 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6AE44A18393B08005DF616 /* UIKit.framework */; };
+		FA6AE45118393B08005DF616 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6AE44F18393B08005DF616 /* InfoPlist.strings */; };
+		FA6AE45318393B08005DF616 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6AE45218393B08005DF616 /* main.m */; };
+		FA6AE45718393B08005DF616 /* ROKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6AE45618393B08005DF616 /* ROKAppDelegate.m */; };
+		FA6AE45918393B08005DF616 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6AE45818393B08005DF616 /* Images.xcassets */; };
+		FA6AE46018393B08005DF616 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6AE45F18393B08005DF616 /* XCTest.framework */; };
+		FA6AE46118393B08005DF616 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6AE44618393B08005DF616 /* Foundation.framework */; };
+		FA6AE46218393B08005DF616 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6AE44A18393B08005DF616 /* UIKit.framework */; };
+		FA6AE46A18393B08005DF616 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6AE46818393B08005DF616 /* InfoPlist.strings */; };
+		FA6AE46C18393B08005DF616 /* rokkasaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6AE46B18393B08005DF616 /* rokkasaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA6AE46318393B08005DF616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA6AE43B18393B08005DF616 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA6AE44218393B08005DF616;
+			remoteInfo = rokkasa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA6AE44318393B08005DF616 /* rokkasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rokkasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6AE44618393B08005DF616 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA6AE44818393B08005DF616 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA6AE44A18393B08005DF616 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA6AE44E18393B08005DF616 /* rokkasa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "rokkasa-Info.plist"; sourceTree = "<group>"; };
+		FA6AE45018393B08005DF616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA6AE45218393B08005DF616 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA6AE45418393B08005DF616 /* rokkasa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rokkasa-Prefix.pch"; sourceTree = "<group>"; };
+		FA6AE45518393B08005DF616 /* ROKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROKAppDelegate.h; sourceTree = "<group>"; };
+		FA6AE45618393B08005DF616 /* ROKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROKAppDelegate.m; sourceTree = "<group>"; };
+		FA6AE45818393B08005DF616 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA6AE45E18393B08005DF616 /* rokkasaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rokkasaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6AE45F18393B08005DF616 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FA6AE46718393B08005DF616 /* rokkasaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "rokkasaTests-Info.plist"; sourceTree = "<group>"; };
+		FA6AE46918393B08005DF616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA6AE46B18393B08005DF616 /* rokkasaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rokkasaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA6AE44018393B08005DF616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6AE44918393B08005DF616 /* CoreGraphics.framework in Frameworks */,
+				FA6AE44B18393B08005DF616 /* UIKit.framework in Frameworks */,
+				FA6AE44718393B08005DF616 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6AE45B18393B08005DF616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6AE46018393B08005DF616 /* XCTest.framework in Frameworks */,
+				FA6AE46218393B08005DF616 /* UIKit.framework in Frameworks */,
+				FA6AE46118393B08005DF616 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA6AE43A18393B08005DF616 = {
+			isa = PBXGroup;
+			children = (
+				FA6AE44C18393B08005DF616 /* rokkasa */,
+				FA6AE46518393B08005DF616 /* rokkasaTests */,
+				FA6AE44518393B08005DF616 /* Frameworks */,
+				FA6AE44418393B08005DF616 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA6AE44418393B08005DF616 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA6AE44318393B08005DF616 /* rokkasa.app */,
+				FA6AE45E18393B08005DF616 /* rokkasaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA6AE44518393B08005DF616 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA6AE44618393B08005DF616 /* Foundation.framework */,
+				FA6AE44818393B08005DF616 /* CoreGraphics.framework */,
+				FA6AE44A18393B08005DF616 /* UIKit.framework */,
+				FA6AE45F18393B08005DF616 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA6AE44C18393B08005DF616 /* rokkasa */ = {
+			isa = PBXGroup;
+			children = (
+				FA6AE45518393B08005DF616 /* ROKAppDelegate.h */,
+				FA6AE45618393B08005DF616 /* ROKAppDelegate.m */,
+				FA6AE45818393B08005DF616 /* Images.xcassets */,
+				FA6AE44D18393B08005DF616 /* Supporting Files */,
+			);
+			path = rokkasa;
+			sourceTree = "<group>";
+		};
+		FA6AE44D18393B08005DF616 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA6AE44E18393B08005DF616 /* rokkasa-Info.plist */,
+				FA6AE44F18393B08005DF616 /* InfoPlist.strings */,
+				FA6AE45218393B08005DF616 /* main.m */,
+				FA6AE45418393B08005DF616 /* rokkasa-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA6AE46518393B08005DF616 /* rokkasaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA6AE46B18393B08005DF616 /* rokkasaTests.m */,
+				FA6AE46618393B08005DF616 /* Supporting Files */,
+			);
+			path = rokkasaTests;
+			sourceTree = "<group>";
+		};
+		FA6AE46618393B08005DF616 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA6AE46718393B08005DF616 /* rokkasaTests-Info.plist */,
+				FA6AE46818393B08005DF616 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA6AE44218393B08005DF616 /* rokkasa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA6AE46F18393B08005DF616 /* Build configuration list for PBXNativeTarget "rokkasa" */;
+			buildPhases = (
+				FA6AE43F18393B08005DF616 /* Sources */,
+				FA6AE44018393B08005DF616 /* Frameworks */,
+				FA6AE44118393B08005DF616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rokkasa;
+			productName = rokkasa;
+			productReference = FA6AE44318393B08005DF616 /* rokkasa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA6AE45D18393B08005DF616 /* rokkasaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA6AE47218393B08005DF616 /* Build configuration list for PBXNativeTarget "rokkasaTests" */;
+			buildPhases = (
+				FA6AE45A18393B08005DF616 /* Sources */,
+				FA6AE45B18393B08005DF616 /* Frameworks */,
+				FA6AE45C18393B08005DF616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA6AE46418393B08005DF616 /* PBXTargetDependency */,
+			);
+			name = rokkasaTests;
+			productName = rokkasaTests;
+			productReference = FA6AE45E18393B08005DF616 /* rokkasaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA6AE43B18393B08005DF616 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ROK;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Alexander Auer";
+				TargetAttributes = {
+					FA6AE45D18393B08005DF616 = {
+						TestTargetID = FA6AE44218393B08005DF616;
+					};
+				};
+			};
+			buildConfigurationList = FA6AE43E18393B08005DF616 /* Build configuration list for PBXProject "rokkasa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA6AE43A18393B08005DF616;
+			productRefGroup = FA6AE44418393B08005DF616 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA6AE44218393B08005DF616 /* rokkasa */,
+				FA6AE45D18393B08005DF616 /* rokkasaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA6AE44118393B08005DF616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6AE45118393B08005DF616 /* InfoPlist.strings in Resources */,
+				FA6AE45918393B08005DF616 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6AE45C18393B08005DF616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6AE46A18393B08005DF616 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA6AE43F18393B08005DF616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6AE45318393B08005DF616 /* main.m in Sources */,
+				FA6AE45718393B08005DF616 /* ROKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6AE45A18393B08005DF616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6AE46C18393B08005DF616 /* rokkasaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA6AE46418393B08005DF616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA6AE44218393B08005DF616 /* rokkasa */;
+			targetProxy = FA6AE46318393B08005DF616 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA6AE44F18393B08005DF616 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6AE45018393B08005DF616 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA6AE46818393B08005DF616 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6AE46918393B08005DF616 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA6AE46D18393B08005DF616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA6AE46E18393B08005DF616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA6AE47018393B08005DF616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rokkasa/rokkasa-Prefix.pch";
+				INFOPLIST_FILE = "rokkasa/rokkasa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA6AE47118393B08005DF616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rokkasa/rokkasa-Prefix.pch";
+				INFOPLIST_FILE = "rokkasa/rokkasa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FA6AE47318393B08005DF616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/rokkasa.app/rokkasa";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rokkasa/rokkasa-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "rokkasaTests/rokkasaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FA6AE47418393B08005DF616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/rokkasa.app/rokkasa";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rokkasa/rokkasa-Prefix.pch";
+				INFOPLIST_FILE = "rokkasaTests/rokkasaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA6AE43E18393B08005DF616 /* Build configuration list for PBXProject "rokkasa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6AE46D18393B08005DF616 /* Debug */,
+				FA6AE46E18393B08005DF616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA6AE46F18393B08005DF616 /* Build configuration list for PBXNativeTarget "rokkasa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6AE47018393B08005DF616 /* Debug */,
+				FA6AE47118393B08005DF616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA6AE47218393B08005DF616 /* Build configuration list for PBXNativeTarget "rokkasaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6AE47318393B08005DF616 /* Debug */,
+				FA6AE47418393B08005DF616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA6AE43B18393B08005DF616 /* Project object */;
+}
