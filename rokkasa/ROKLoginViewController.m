@@ -51,11 +51,17 @@
             [defaults setObject:nil forKey:@"coreUserId"];
             [defaults setObject:nil forKey:@"coreProjectId"];
             [defaults setObject:nil forKey:@"projectId"];
+            
+
+        
+        
         }
         
         // Setting defaults
         [defaults setValue:[dict objectForKey:@"id"] forKey:@"userId"];
         [defaults setValue:[dict objectForKey:@"api_key"] forKey:@"apiKey"];
+        
+
 
         
         // Setting defaults headers
@@ -71,6 +77,8 @@
             appDelegate.currentUser = [user firstObject];
             [defaults setObject:appDelegate.currentUser.getUserId forKey:@"coreUserId"];
             NSLog(@"%@", appDelegate.currentUser.getUserId);
+            NSLog(@"SETT");
+            [defaults synchronize];
         } failure:^(RKObjectRequestOperation *operation, NSError *error) {
             NSLog(@"Error: %@",error);
         }];
@@ -90,6 +98,13 @@
         // Synchronize default data
         [defaults synchronize];
         
+        
+        NSLog(@"API %@", [defaults objectForKey:@"apiKey"]);
+        NSLog(@"UID %@", [defaults objectForKey:@"userId"]);
+        NSLog(@"CUID %@", [defaults objectForKey:@"coreUserId"]);
+        NSLog(@"CPID %@", [defaults objectForKey:@"coreProjectId"]);
+        NSLog(@"PID %@", [defaults objectForKey:@"projectId"]);
+
         
         // segue to mainview
         [self performSegueWithIdentifier:@"segue_login" sender:sender];

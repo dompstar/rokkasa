@@ -69,6 +69,7 @@
 		FAA187F518396DA600C6DD4E /* ROKDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA187F418396DA600C6DD4E /* ROKDashboardViewController.m */; };
 		FAA187F818396DB600C6DD4E /* ROKContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA187F718396DB600C6DD4E /* ROKContactViewController.m */; };
 		FADA910F18393CF5002F7AC1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADA910E18393CF5002F7AC1 /* CoreData.framework */; };
+		FAF6DE2F1839C957001CEF9B /* mockup_dashboard_640x1008.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF6DE2E1839C957001CEF9B /* mockup_dashboard_640x1008.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,7 @@
 		FAA187F618396DB600C6DD4E /* ROKContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROKContactViewController.h; sourceTree = "<group>"; };
 		FAA187F718396DB600C6DD4E /* ROKContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROKContactViewController.m; sourceTree = "<group>"; };
 		FADA910E18393CF5002F7AC1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FAF6DE2E1839C957001CEF9B /* mockup_dashboard_640x1008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mockup_dashboard_640x1008.png; sourceTree = "<group>"; };
 		FBF884D03BD549A69A821BD2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,6 +215,7 @@
 		FA017E4A183970F200FC77C5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FAF6DE2E1839C957001CEF9B /* mockup_dashboard_640x1008.png */,
 				FA017E4B183970F700FC77C5 /* icons */,
 			);
 			name = images;
@@ -435,6 +438,7 @@
 				FAA187DD183942E600C6DD4E /* iphoneStoryBoard.storyboard in Resources */,
 				FA017E761839710200FC77C5 /* aufgaben_48x48.png in Resources */,
 				FA017E871839710200FC77C5 /* noview_grey50_48x32.png in Resources */,
+				FAF6DE2F1839C957001CEF9B /* mockup_dashboard_640x1008.png in Resources */,
 				FA017E721839710200FC77C5 /* add_blue_48x48.png in Resources */,
 				FA017E8A1839710200FC77C5 /* sort_black_48x48.png in Resources */,
 				FA017E851839710200FC77C5 /* mehrprojektauswahl_48x48.png in Resources */,
@@ -656,6 +660,7 @@
 				INFOPLIST_FILE = "rokkasa/rokkasa-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -673,6 +678,7 @@
 				INFOPLIST_FILE = "rokkasa/rokkasa-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

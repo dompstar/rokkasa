@@ -56,10 +56,13 @@ dispatch_queue_t myQueue;
                     if (projectId != nil) {
                         NSArray *project = [Project MR_findByAttribute:@"objectId" withValue:projectId];
                         self.currentProject = [project firstObject];
+                        [defaults setObject:self.currentProject.getProjectId forKey:@"coreProjectId"];
                     }
                 } failure:^(RKObjectRequestOperation *operation, NSError *error) {
                     NSLog(@"Error: %@",error);
                 }];
+                
+                [defaults synchronize];
                 
                 dispatch_async(dispatch_get_main_queue(), ^{
                     self.window.rootViewController = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:@"menuViewController"];

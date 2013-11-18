@@ -27,16 +27,27 @@
 {
     [super viewDidLoad];
     _appDelegate = (ROKAppDelegate *) [[UIApplication sharedApplication] delegate];
-    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+
     // Setting menu item array
     _menuItems = @[@"overview", @"time", @"todo", @"contacts", @"docs", @"placeholder", @"logout"];
     
     // Setting projects
-    NSString *uid = [[NSUserDefaults standardUserDefaults] objectForKey:@"coreUserId"];
-    _projects = [Project MR_findAllSortedBy:@"projectName" ascending:YES withPredicate:[NSPredicate predicateWithFormat:@"ANY relUserProject == %@", uid]];
+    User *uid = [[User MR_findByAttribute:@"objectId" withValue:[defaults objectForKey:@"userId"]] firstObject];
+    NSString *stringId = [[[uid objectID] URIRepresentation] absoluteString];
+    NSArray *components = [stringId componentsSeparatedByString:@"/p"];
+
+
+    
+    _projects = [Project MR_findAllSortedBy:@"projectName" ascending:YES withPredicate:[NSPredicate predicateWithFormat:@"ANY relUserProject == %@", [components lastObject]]];
     
     
-    
+    NSLog(@"API %@", [defaults objectForKey:@"apiKey"]);
+    NSLog(@"UID %@", [defaults objectForKey:@"userId"]);
+    NSLog(@"CUID %@", [defaults objectForKey:@"coreUserId"]);
+    NSLog(@"CPID %@", [defaults objectForKey:@"coreProjectId"]);
+    NSLog(@"PID %@", [defaults objectForKey:@"projectId"]);
+
 
 }
 
@@ -49,11 +60,13 @@
         [_projectButton setTitle:[NSString stringWithFormat:@"Bitte Projekt auswählen"] forState:UIControlStateNormal];
     }
     
-    NSString *pid = _appDelegate.currentProject.objectId;
-    if (pid != nil) {
-        NSUInteger index = [_projects indexOfObject:[[_projects filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self.objectId == %@",  pid]] objectAtIndex:0]];
-        [_projectPicker selectRow:index inComponent:0 animated:NO];
-    }
+    [_projectPicker reloadAllComponents];
+//    NSString *pid = _appDelegate.currentProject.objectId;
+//    NSLog(@"%@", pid);
+//    if (pid != nil) {
+//        NSUInteger index = [_projects indexOfObject:[[_projects filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self.objectId == %@",  pid]] objectAtIndex:0]];
+//        [_projectPicker selectRow:index inComponent:0 animated:NO];
+//    }
 
 
     
