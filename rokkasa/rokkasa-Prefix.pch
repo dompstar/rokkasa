@@ -13,4 +13,17 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
 #endif
+#import "ROKAppConstants.h"
+#import "ROKAppDelegate.h"
+#import <dispatch/dispatch.h>
+
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <RestKit/RestKit.h>
+#import "CoreData+MagicalRecord.h"
+#define MR_shorthand
+#import "SWRevealViewController.h"
+#import "User.h"
+#import "Project.h"

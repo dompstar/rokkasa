@@ -1,0 +1,5 @@
+platform :ios, '7.0' 
+pod 'SWRevealViewController' 
+pod 'RestKit'
+pod 'TestFlightSDK'
+pod 'MagicalRecord'
